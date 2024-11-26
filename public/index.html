@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HorizonSalonSpa</title>
+
+    <!-- adding css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
+    
+    
+    <!-- mediaQuery css  -->
+    <link rel="stylesheet" href="./css/MediaQuery.css">
+
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/7a6c6b42a6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+ <header>
+    <a href="index.html" class="logo">HorizonSalonSpa</a>
+    <div class="menuToggle"></div>
+    <nav>
+        <span class="closeMenu">&times;</span> <!-- Close button -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+ </header>
+    
+ <section>
+    <p class="onepara">At HorizonSalonSpa, we offer luxurious hair, beauty, and spa treatments tailored to your needs. 
+                Our expert team ensures that every visit leaves you feeling rejuvenated and looking your best. Experience exceptional service and a relaxing atmosphere designed for you.</p>
+            <div class="btn">
+                <a href="booking.html">Book Now for a Gorgeous Look</a>
+                <a href="services.html">Explore Our Services</a>
+            </div>
+ </section>
+         
+
+
+ <section class="image-gallery-section">
+    <h2 class="gallery-title">Our Beautiful Girls</h2>
+    <div class="image-gallery">
+        <!-- Images will be dynamically added by JavaScript -->
+    </div>
+</section>
+
+      
+<!-- section three -->
+<section class="sectionThree">
+    <h2>Services For Every Occasion</h2>
+    <p class="instructions">Click on a service below to learn more about what we offer.</p>
+    <div class="servicesBox">
+        <div class="box" data-title="Bespoke Hair Services" data-details="From braiding to customized hair treatments, let us bring your hair goals to life for any occasion.">
+            <img src="img/pexels-rdne-7755534.jpg" alt="Bespoke Hair Services">
+            <div class="overlay">Click to Learn More</div>
+        </div>
+        <div class="box" data-title="Flawless Brows & Lashes" data-details="Enhance your natural beauty with our ombre brows, microblading, and lash fixation services.">
+            <img src="img/brow.jpg" alt="Flawless Brows & Lashes">
+            <div class="overlay">Click to Learn More</div>
+        </div>
+        <div class="box" data-title="Relaxing Spa Services" data-details="Unwind and rejuvenate with our luxurious spa treatments designed for ultimate relaxation.">
+            <img src="img/massage.jpg" alt="Relaxing Spa Services">
+            <div class="overlay">Click to Learn More</div>
+        </div>
+        <div class="box" data-title="Professional Nail Care" data-details="Get perfectly polished nails for any occasion with our manicure, pedicure, and nail art services.">
+            <img src="img/2148976103.jpg" alt="Professional Nail Care">
+            <div class="overlay">Click to Learn More</div>
+        </div>
+        <div class="box" data-title="Glowing Facials" data-details="Refresh and hydrate your skin with our tailored facial treatments, perfect for photos or events.">
+            <img src="img/facials.jpg" alt="Glowing Facials">
+            <div class="overlay">Click to Learn More</div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal Structure -->
+<div id="serviceModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDetails"></p>
+    </div>
+</div>
+
+
+
+
+ <!-- section five -->
+ <!-- Section reserved for future enhancements -->
+ <!-- 
+<section class="sectionFive">
+    <h2>Coming Soon</h2>
+    <p>Stay tuned for our exciting new services and offerings!</p>
+</section>
+-->
+
+
+
+    <!-- beforefooter  -->
+    <div class="beforefooter">
+        <div class="box">
+            <div class="logo">Ready to Experience True Self-Care?</div>
+            <p class="para">At HorizonSalonSpa,
+                 its all about taking time for yourself and indulging in the luxury you deserve. 
+                From spa treatments to expert beauty services, we are here to pamper you. Step into a world where its all about you.
+                 Treat yourself to the ultimate self-care experience today!</p>
+
+            <div class="bf-text">Subscribe For Offers</div>
+            <div class="subscribe">
+                <input type="text" name="" id="">
+                <button class="btn">subscribe</button>
+            </div>
+        </div>
+        
+            
+        <div class="map">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.261250574258!2d-0.12636470000000002!3d5.6753222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf83aeb30d3d4d%3A0xea0a03fce0af2d57!2sHorizon%20Salon%20%26%20Spa!5e0!3m2!1sen!2sgh!4v1729780739616!5m2!1sen!2sgh"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    
+
+            
+
+        <div class="box">
+            <div class="bf-text">Quick Links</div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./portfolio.html">portfolio</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+            <div class="bf-text">Follow Us</div>
+            <div class="icons">
+                <a href="#" class="fa-brands fa-facebook-f"></a>
+                <a href="#" class="fa-brands fa-google"></a>
+                <a href="https://www.instagram.com/horizonsalon_spa/" class="fa-brands fa-instagram"></a>
+            </div>
+        </div>
+
+        <div class="box">
+        
+            <div class="bf-text">Call Us</div>
+            <ul class="SayHi">
+                <li>Phone :+233594671366</li>
+            </ul>
+
+               
+
+        
+        </div>
+    </div>
+    
+    <!-- js  -->
+    <script src="js\script.js"></script>
+</body>
+
+</html>

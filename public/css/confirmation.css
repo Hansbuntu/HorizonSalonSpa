@@ -1,0 +1,59 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Confirmation Container Styling */
+.confirmation-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.confirmation-container h1 {
+    color: #e41345;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.confirmation-container p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Details Message Styling */
+.details-message {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #3e4359;
+    line-height: 1.5;
+}
+
+/* Back Home Button Styling */
+.back-home-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #e41345;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #e41345;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-home-button:hover {
+    background-color: #e41345;
+    color: #fff;
+}

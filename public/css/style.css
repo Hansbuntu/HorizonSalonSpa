@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Philosopher&family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+
+}
+
+:root {
+    --font-01: 'Poppins', sans-serif;
+    --font-02: 'Philosopher', sans-serif;
+
+    /* Primary brand color based on the logo's gradient */
+    --global-color-0: #d9165a; /* Adjusted to match the deep pink gradient in the logo */
+    --global-color-1: #e84572; /* Lighter pink for accents and hover states */
+
+    /* Text and dark elements */
+    --global-color-2: #1a1a1a; /* Keep this as the primary dark color for body text */
+    --global-color-3: #3e4359; /* Muted dark tone for secondary elements */
+
+    /* Background and light tones */
+    --global-color-4: #f7f7f7; /* Light gray for soft backgrounds */
+    --global-color-5: #ffffff; /* White for clean sections */
+
+    /* Accent and contrast colors */
+    --global-color-6: #243673; /* Deep blue for contrast or links (could tie into relaxation/spa themes) */
+    --global-color-7: #BFD1FF; /* Soft blue accent for subtle elements or buttons */
+
+    /* New addition for logo consistency */
+    --global-gradient: linear-gradient(45deg, #d9165a, #e84572); /* Gradient color reflecting the logo for backgrounds or special sections */
+}
+
+
+
+/* Base styles for header */
+header {
+    position: relative;
+    height: 86px;
+    width: 100%;
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3e1a2d;
+    z-index: 1000;
+}
+
+header .logo {
+    color: var(--global-color-1);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: xx-large;
+    font-family: var(--font-02);
+    text-shadow: 0.5px 0.5px 3px var(--global-color-1);
+    transition: 0.4s;
+}
+
+/* Desktop navigation menu */
+header nav {
+    display: flex; /* Always show in desktop */
+    flex-direction: row; /* Align horizontally */
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.4s ease;
+}
+
+header nav ul li a:hover {
+    color: var(--global-color-0);
+}
+
+/* Mobile-specific styling */
+@media (max-width: 1024px) {
+    header nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 37px; /* Adds spacing between menu items only in mobile view */
+    }
+}
+
+.menuToggle {
+    display: none; /* Hidden in desktop */
+}
+
+header nav .closeMenu {
+    display: none; /* Hidden in desktop */
+}
+
+@media (max-width: 1024px) {
+    /* Mobile view - Hide nav by default and use the menu toggle */
+    header nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #7a3a4f; /* Lighter color for the menu */
+    color: #fff;
+    display: none;
+    flex-direction: column;
+    padding-top: 50px; /* Adjusted padding to align items near the top */
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+    header.active nav {
+        display: flex; /* Show nav when active */
+    }
+
+    /* Show the close button and toggle in mobile */
+    header nav .closeMenu {
+        display: block;
+        font-size: 2rem;
+        color: #fff;
+        text-align: right;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    header ul {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .menuToggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .menuToggle::before,
+    .menuToggle::after {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: #fff;
+    }
+}
+
+
+ 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.onepara {
+    font-size: 1.2rem; /* Adjust font size */
+    color: #4b4b4b; /* Neutral dark gray for readability */
+    line-height: 1.8; /* Slightly increased line spacing for better readability */
+    margin: 1rem auto; /* Center align and add top/bottom spacing */
+    font-family: 'Poppins', sans-serif; /* Use a clean, modern font */
+    text-align: center; /* Center-align the text */
+    max-width: 700px; /* Limit the paragraph's width for focus */
+    padding: 1rem; /* Add padding for spacing inside the container */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Add rounded corners for a polished look */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.para {
+    font-size: 1.2rem; /* Adjust font size */
+    color: #eeeeee; /* Text color */
+    line-height: 1.6; /* Improve readability with line spacing */
+    margin: 0 auto 1.5rem; /* Center align with auto margins */
+    font-family: 'Poppins', sans-serif; /* Adjust based on your site fonts */
+    text-align: justify; /* Justify text for a clean, aligned look */
+    max-width: 800px; /* Limit the width for better readability */
+    padding: 1rem; /* Add padding for spacing inside the container */
+    background-color: rgba(213, 10, 10, 0.1); /* Light background to make it distinct */
+    border-radius: 10px; /* Add rounded corners for a modern look */
+    box-shadow: 0px 2px 6px rgba(134, 13, 13, 0.1); /* Subtle shadow for depth */
+}
+
+
+
+.btn {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn a {
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn a:first-child {
+    background-color: #d9165a; /* Primary color */
+    color: #ffffff;
+    border: 1px solid #d9165a;
+}
+
+.btn a:first-child:hover {
+    background-color: #e84572; /* Slightly lighter color on hover */
+}
+
+.btn a:nth-child(2) {
+    background-color: #ffffff;
+    color: #d9165a;
+    border: 1px solid #d9165a;
+}
+
+.btn a:nth-child(2):hover {
+    background-color: #e84572;
+    color: #ffffff;
+}
+
+
+/* Section styling */
+.image-gallery-section {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Gallery title */
+.gallery-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Gallery container */
+.image-gallery {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Gallery items */
+.gallery-item {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Start images off-screen */
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Initially invisible */
+    transition: all 0.5s ease; /* Smooth transition */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Active image */
+.gallery-item.active {
+    left: 0; /* Bring into view */
+    opacity: 1; /* Make visible */
+}
+
+/* Previous image */
+.gallery-item.previous {
+    left: -100%; /* Move off-screen to the left */
+    opacity: 0;
+}
+
+
+
+/* transformBox */
+
+.transformBox {
+    max-width: 1100px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    position: relative;
+    box-shadow: 1px 1px 15px 1px var(--global-color-2);
+    color: #fff;
+
+    border-radius: 10px;
+    transform: translateY(-100px);
+}
+
+.transformBox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: url("../img/discountimg.jpg");
+    z-index: -2;
+}
+
+.transformBox::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--global-color-2);
+    z-index: -2;
+    opacity: .65;
+}
+
+.transformBox h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: var(--font-02);
+    margin-bottom: 15px;
+}
+
+.transformBox p {
+    font-family: var(--font-02);
+}
+
+
+
+/* sectionSix */
+
+.sectionSix {
+    text-align: center;
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sectionSix h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: var(--font-02);
+}
+
+.sectionSix .icon {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.sectionSix .icon a {
+    height: 2rem;
+    width: 2rem;
+    text-decoration: none;
+    border: 2px solid var(--global-color-0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    border-radius: 50%;
+    color: var(--global-color-0);
+    transition: all .4s ease;
+}
+
+.sectionSix .icon a:hover {
+    background-color: var(--global-color-0);
+    color: #fff;
+}
+
+.sectionSix .imgicon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 2rem;
+}
+
+.sectionSix .imgicon img {
+    border-radius: 50%;
+}
+
+.sectionSix .imgicon i {
+    font-size: 5rem;
+    color: var(--global-color-0);
+    position: absolute;
+    bottom: -20px;
+    padding-bottom: 1rem;
+}
+
+/* .sectionSix p {} */
+
+.sectionSix p small {
+    margin-top: 1rem;
+    display: block;
+    color: var(--global-color-0);
+}
+
+
+/* before footer  */
+
+.beforefooter {
+    padding: 2rem 2%;
+
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    gap: 2rem;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.beforefooter .box {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.beforefooter .box .logo {
+    color: var(--global-color-1);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: x-large;
+    font-family: var(--font-02);
+
+    text-shadow: .5px .5px 3px var(--global-color-1);
+    transition: .4s;
+    width: fit-content;
+}
+
+.beforefooter .box .logo:hover {
+    transform: scale(1.1);
+}
+
+.beforefooter .box .bf-text {
+    text-decoration: none;
+    /* font-weight: 600; */
+    font-size: xx-large;
+    font-family: var(--font-02);
+
+}
+
+.beforefooter .box a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.beforefooter .box .subscribe {
+    display: flex;
+}
+
+.beforefooter .box .subscribe input {
+    width: 60%;
+    height: 55px;
+    padding: .5rem;
+
+}
+
+.beforefooter .box .subscribe .btn {
+    border: none;
+    box-sizing: border-box;
+    background-color: none;
+    background-color: var(--global-color-1);
+    color: #fff;
+    padding: .8rem 2rem;
+    font-size: 20px;
+    transition: all .4s ease;
+}
+
+.beforefooter .box .subscribe .btn:hover {
+    background-color: var(--global-color-0);
+}
+
+.beforefooter .box .icons a {
+    border: 1px solid var(--global-color-1);
+    padding: .5rem;
+    background-color: var(--global-color-1);
+    transition: all .5s ease;
+}
+
+.beforefooter .box .icons a:hover {
+    background-color: var(--global-color-0);
+}
+
+.beforefooter .box .address {
+    padding-right: 1rem;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 2rem 2%;
+    background-color: #1a1a1a;
+    color: #fff;
+
+}

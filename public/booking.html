@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment | HorizonSalonSpa</title>
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+
+    <div class="booking-container">
+        <h1>Book Your Appointment</h1>
+    
+        <a href="index.html" class="back-to-home-button">← Back to Home</a>
+    
+        <form id="bookingForm" action="/book-appointment" method="POST">
+            <!-- Service Selection -->
+            <label for="service">Choose a Service:</label>
+            <select id="service" name="service_id" required></select>
+    
+            <!-- Date Selection -->
+            <label for="date">Choose a Date:</label>
+            <input type="date" id="date" name="appointment_date" required>
+    
+            <!-- Time Selection -->
+            <label for="time">Choose a Time:</label>
+            <select id="time" name="appointment_time" required></select>
+    
+            <!-- Additional User Details -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Any special requests..."></textarea>
+    
+            <!-- Confirm Booking Button -->
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </div>
+    
+
+<script src="js/bookingFetch.js"></script>
+
+</body>
+</html>
+

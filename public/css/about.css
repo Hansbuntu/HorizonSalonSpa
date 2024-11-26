@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Philosopher&family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+
+}
+
+:root {
+    --font-01: 'Poppins', sans-serif;
+    --font-02: 'Philosopher', sans-serif;
+
+    /* color  */
+    --global-color-0: #e41345;
+    --global-color-1: #f70077;
+    --global-color-2: #1a1a1a;
+    --global-color-3: #3e4359;
+    --global-color-4: #f7f7f7;
+    --global-color-5: #fff;
+    --global-color-6: #243673;
+    --global-color-7: #BFD1FF;
+
+}
+
+/* sectionFirst */
+
+.sectionFirst {
+    padding: 1rem 0% 1rem;
+}
+
+.sectionFirst::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: var(--global-color-2); */
+ 
+    z-index: -1;
+    opacity: .7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sectionFirst h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-family: var(--font-02);
+}
+
+/* second section  */
+
+.AboutMeInDetail {
+    padding: 2.5rem 5%;
+    display: flex;
+    gap: 2rem;
+}
+
+.AboutMeInDetail .img {
+    max-width: 400px;
+}
+
+.AboutMeInDetail .img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.AboutMeInDetail .infoAboutMe {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.AboutMeInDetail .infoAboutMe h1 {
+    color: var(--global-color-1);
+    font-family: var(--font-02);
+}
+
+.AboutMeInDetail .infoAboutMe .p-text {
+    font-family: var(--font-02);
+}
+
+/* .AboutMeInDetail .infoAboutMe .para {} */
+
+.AboutMeInDetail .infoAboutMe h2 {
+    font-family: var(--font-02);
+    color: var(--global-color-1);
+
+}
+
+.AboutMeInDetail .infoAboutMe .iconLink {
+    display: flex;
+    gap: 2rem;
+}
+
+.AboutMeInDetail .infoAboutMe .iconLink i {
+    color: var(--global-color-1);
+    overflow-y: hidden;
+}
+
+.AboutMeInDetail .infoAboutMe .iconLink i a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-01);
+    transition: all .4s ease;
+}
+
+.AboutMeInDetail .infoAboutMe .iconLink i a:hover {
+    color: var(--global-color-1);
+}
+
+

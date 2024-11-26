@@ -1,0 +1,131 @@
+<!-- I have already made navigation bar so please watch part 1 of this series I am just going to copy all the code  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HorizonSalonSpa</title>
+
+    <!-- adding css  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- about css  -->
+    <link rel="stylesheet" href="./css/porfolio.css">
+
+    <!-- mediaQuery css  -->
+    <link rel="stylesheet" href="./css/MediaQuery.css">
+
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/7a6c6b42a6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">HorizonSalonSpa</a>
+        <div class="menuToggle"></div>
+        <nav>
+            <span class="closeMenu">&times;</span> <!-- Close button -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+     </header>
+
+    <section class="sectionFirst">
+        <h1>Porfolio</h1>
+    </section>
+
+    <div class="featured-gallery">
+        <!-- Large featured image -->
+        <div class="featured-image-container">
+            <img id="featuredImage" src="img/services1.jpg" alt="Featured Image">
+        </div>
+    
+        <!-- Thumbnails -->
+        <div class="thumbnails">
+            <img class="thumbnail" src="img/services1.jpg" alt="Thumbnail 1" onclick="changeFeaturedImage(this)">
+            <img class="thumbnail" src="img/services5.jpg" alt="Thumbnail 2" onclick="changeFeaturedImage(this)">
+            <img class="thumbnail" src="img/services2.jpg" alt="Thumbnail 3" onclick="changeFeaturedImage(this)">
+            <img class="thumbnail" src="img/service7.jpg" alt="Thumbnail 4" onclick="changeFeaturedImage(this)">
+            <img class="thumbnail" src="img/services4.jpg" alt="Thumbnail 5" onclick="changeFeaturedImage(this)">
+            <img class="thumbnail" src="img/service8.jpg" alt="Thumbnail 6" onclick="changeFeaturedImage(this)">
+            <img class="thumbnail" src="img/service6.jpg" alt="Thumbnail 7" onclick="changeFeaturedImage(this)">
+        </div>
+    </div>
+    
+  
+
+
+
+       <!-- beforefooter  -->
+       <div class="beforefooter">
+        <div class="box">
+            <div class="logo">Ready to Experience True Self-Care?</div>
+            <p class="para">At HorizonSalonSpa, its all about taking time 
+                for yourself and indulging in the luxury you deserve. 
+                From spa treatments to expert beauty services, we are here to pamper you. Step into a world where its all about you.
+                 Treat yourself to the ultimate self-care experience today!</p>
+
+            <div class="bf-text">Subscribe For Offers</div>
+            <div class="subscribe">
+                <input type="text" name="" id="">
+                <button class="btn">subscribe</button>
+            </div>
+        </div>
+        
+            
+        <div class="map">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.261250574258!2d-0.12636470000000002!3d5.6753222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf83aeb30d3d4d%3A0xea0a03fce0af2d57!2sHorizon%20Salon%20%26%20Spa!5e0!3m2!1sen!2sgh!4v1729780739616!5m2!1sen!2sgh"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    
+            
+
+        <div class="box">
+            <div class="bf-text">Quick Links</div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./portfolio.html">portfolio</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+            <div class="bf-text">Follow Us</div>
+            <div class="icons">
+                <a href="#" class="fa-brands fa-facebook-f"></a>
+                <a href="#" class="fa-brands fa-google"></a>
+                <a href="https://www.instagram.com/horizonsalon_spa/" class="fa-brands fa-instagram"></a>
+            </div>
+        </div>
+
+        <div class="box">
+        
+            <div class="bf-text">Call Us</div>
+            <ul class="SayHi">
+                <li>Phone :+233594671366</li>
+            </ul>
+
+               
+
+        
+        </div>
+    </div>
+ <!-- js  -->
+ <script src="js\script.js"></script>
+</body>
+
+</html>
