@@ -1,203 +1,198 @@
-<!-- I have already made navigation bar so please watch part 1 of this series I am just going to copy all the code  -->
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HorizonSalonSpa</title>
-
-    <!-- adding css  -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- about css  -->
-    <link rel="stylesheet" href="./css/services.css">
-
-    <!-- mediaQuery css  -->
-    <link rel="stylesheet" href="./css/MediaQuery.css">
-
-    <!-- fontawesome  -->
-    <script src="https://kit.fontawesome.com/7a6c6b42a6.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services | Horizon Salon &amp; Spa</title>
+  <meta name="description" content="Hair, brows & lashes, spa and massage, nail care, facials and waxing at Horizon Salon & Spa.">
+  <meta name="theme-color" content="#faf6f1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Services | Horizon Salon &amp; Spa">
+  <meta property="og:description" content="Hair, brows & lashes, spa and massage, nail care, facials and waxing at Horizon Salon & Spa.">
+  <meta property="og:image" content="https://hansbuntu.github.io/HorizonSalonSpa/images/og.jpg">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
 </head>
-
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main">
+      <a class="brand" href="index.html" aria-label="Horizon Salon &amp; Spa home">
+        <img src="images/mark.png" alt="" width="67" height="48">
+        <span class="brand-text"><span class="brand-name">Horizon</span><span class="brand-sub">Salon &amp; Spa</span></span>
+      </a>
+      <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+      <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" aria-current="page">Services</a></li>
+          <li><a href="portfolio.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="btn btn--primary" href="contact.html#book">Book now</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <a href="index.html" class="logo">HorizonSalonSpa</a>
-        <div class="menuToggle"></div>
-        <nav>
-            <span class="closeMenu">&times;</span> <!-- Close button -->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">portfolio</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-     </header>
+  <main id="main">
 
-
-    <section class="sectionFirst">
-        <h1>Services</h1>
+    <section class="page-hero">
+      <div class="wrap reveal">
+        <span class="eyebrow">Choose From Collection</span>
+        <h1>Our <em>Services</em></h1>
+        <p class="lead">At HorizonSalonSpa, we offer luxurious hair, beauty, and spa treatments tailored to your needs. Our expert team ensures that every visit leaves you feeling rejuvenated and looking your best. Experience exceptional service and a relaxing atmosphere designed for you.</p>
+      </div>
     </section>
 
-
-    <!-- section second  -->
-    <section class="aboutServices">
-        <div class="ser-litText">Choose From Collection</div>
-        <p class="ser-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsum?</p>
-
-        <div class="ser-box">
-            <div class="box">
-                <div class="img">
-                    <img src="./img/nailart_1.jpg" alt="">
-                </div>
-                <div class="boxinfo">
-                    <div class="ser-name">Clean Nail Art</div>
-                    <p class="ser-discription">This is a short description elaborationg the service you have mentioned
-                        above.</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="img">
-                    <img src="./img/haircut_2.jpg" alt="">
-                </div>
-                <div class="boxinfo">
-
-                    <div class="ser-name">Hair Styling</div>
-                    <p class="ser-discription">This is a short description elaborationg the service you have mentioned
-                        above.</p>
-                </div>
-
-            </div>
-            <div class="box">
-                <div class="img">
-                    <img src="./img/massage_3.jpg" alt="">
-                </div>
-                <div class="boxinfo">
-
-                    <div class="ser-name">Full Body Massage</div>
-                    <p class="ser-discription">This is a short description elaborationg the service you have mentioned
-                        above.</p>
-                </div>
-
-            </div>
-            
-
-           
-            <div class="box">
-                <div class="img">
-                    <img src="./img/spa_5.jpg" alt="">
-                </div>
-
-                <div class="boxinfo">
-
-                    <div class="ser-name">Fully Equipped Spa</div>
-                    <p class="ser-discription">This is a short description elaborationg the service you have mentioned
-                        above.</p>
-                </div>
-
-            </div>
+    <section class="section" style="padding-top:1rem">
+      <div class="wrap">
+        <div class="services-grid">
+        <article class="service-card reveal reveal-d0">
+          <div class="media"><img src="images/svc-hair.webp" alt="Bespoke Hair Services" width="900" height="675" loading="lazy" decoding="async"></div>
+          <div class="body">
+            <span class="num">01</span>
+            <h3>Bespoke Hair Services</h3>
+            <p>From braiding to customized hair treatments, let us bring your hair goals to life for any occasion.</p>
+            <ul class="tags"><li>Braiding</li><li>Hair treatments</li><li>Hair styling</li></ul>
+          </div>
+        </article>
+        <article class="service-card reveal reveal-d1">
+          <div class="media"><img src="images/svc-brows.webp" alt="Flawless Brows & Lashes" width="900" height="675" loading="lazy" decoding="async"></div>
+          <div class="body">
+            <span class="num">02</span>
+            <h3>Flawless Brows & Lashes</h3>
+            <p>Enhance your natural beauty with our ombre brows, microblading, and lash fixation services.</p>
+            <ul class="tags"><li>Ombre brows</li><li>Microblading</li><li>Lash fixation</li></ul>
+          </div>
+        </article>
+        <article class="service-card reveal reveal-d2">
+          <div class="media"><img src="images/svc-spa.webp" alt="Relaxing Spa Services" width="900" height="675" loading="lazy" decoding="async"></div>
+          <div class="body">
+            <span class="num">03</span>
+            <h3>Relaxing Spa Services</h3>
+            <p>Unwind and rejuvenate with our luxurious spa treatments designed for ultimate relaxation.</p>
+            <ul class="tags"><li>Full body massage</li><li>Fully equipped spa</li></ul>
+          </div>
+        </article>
+        <article class="service-card reveal reveal-d0">
+          <div class="media"><img src="images/svc-nails.webp" alt="Professional Nail Care" width="900" height="675" loading="lazy" decoding="async"></div>
+          <div class="body">
+            <span class="num">04</span>
+            <h3>Professional Nail Care</h3>
+            <p>Get perfectly polished nails for any occasion with our manicure, pedicure, and nail art services.</p>
+            <ul class="tags"><li>Manicure</li><li>Pedicure</li><li>Nail art</li></ul>
+          </div>
+        </article>
+        <article class="service-card reveal reveal-d1">
+          <div class="media"><img src="images/svc-facials.webp" alt="Glowing Facials" width="900" height="675" loading="lazy" decoding="async"></div>
+          <div class="body">
+            <span class="num">05</span>
+            <h3>Glowing Facials</h3>
+            <p>Refresh and hydrate your skin with our tailored facial treatments, perfect for photos or events.</p>
+            <ul class="tags"><li>Tailored facials</li></ul>
+          </div>
+        </article>
+        <article class="service-card reveal reveal-d2">
+          <div class="media"><img src="images/svc-waxing.webp" alt="Silky Smooth Waxing" width="900" height="675" loading="lazy" decoding="async"></div>
+          <div class="body">
+            <span class="num">06</span>
+            <h3>Silky Smooth Waxing</h3>
+            <p>Feel confident with our gentle waxing services that leave your skin smooth and flawless.</p>
+            <ul class="tags"><li>Gentle waxing</li></ul>
+          </div>
+        </article>
         </div>
+      </div>
     </section>
 
-
-
-    <!-- ----slider    <section class="imgslidertext">
-        <div class="imgslider">
-            <img src="./img/bestbrindalOffer1.jpg" alt="" class="slide">
-            <img src="./img/bestbrindalOffer2.jpg" alt="" class="slide">
-            <img src="./img/bestbrindalOffer3.jpg" alt="" class="slide">
-
-            <i class="fa-solid fa-chevron-left prev" onclick="goPrev()"></i>
-            <i class="fa-solid fa-chevron-right next" onclick="goNext()"></i>
+    <section class="section section--sand">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Also on the menu</span>
+          <h2>Popular <em>treatments</em></h2>
         </div>
-
-        <div class="slideText">
-            <div class="st-heading">The Best Bridal Makeup Offer</div>
-            <p class="lit-text">You Can Highligh a special service here. This can then be bifurcated into smaller steps
-                or parts as done below. Describe it here.</p>
-
-            <div class="lit-service">
-                <div class="textinfo">
-                    <div class="ti-head" >Pre-Wedding Photo shoot</div>
-                    <p class="des">This is a shor description elaborating the service you have mentioned above.</p>
-                </div>
-                <div class="textinfo">
-                    <div class="ti-head" >The Engagement Day</div>
-                    <p class="des">This is a shor description elaborating the service you have mentioned above.</p>
-                </div>
-                <div class="textinfo">
-                    <div class="ti-head" >The Grand Wedding Day</div>
-                    <p class="des">This is a shor description elaborating the service you have mentioned above.</p>
-                </div>
-            </div>
+        <div class="menu-list reveal">
+          <div>Clean Nail Art</div>
+          <div>Hair Styling</div>
+          <div>Full Body Massage</div>
+          <div>Fully Equipped Spa</div>
         </div>
-    </section>----- -->
+        <p style="text-align:center;margin-top:3rem" class="reveal"><a class="btn btn--primary" href="contact.html#book"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Book a service</a></p>
+      </div>
+    </section>
 
-
-    <div class="beforefooter">
-        <div class="box">
-            <div class="logo">Ready to Experience True Self-Care?</div>
-            <p class="para">At HorizonSalonSpa, its all about taking time for yourself and indulging in the luxury you deserve. 
-                From spa treatments to expert beauty services, we are here to pamper you. Step into a world where its all about you.
-                 Treat yourself to the ultimate self-care experience today!</p>
-
-            <div class="bf-text">Subscribe For Offers</div>
-
-            <div class="map">
-                <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.261250574258!2d-0.12636470000000002!3d5.6753222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf83aeb30d3d4d%3A0xea0a03fce0af2d57!2sHorizon%20Salon%20%26%20Spa!5e0!3m2!1sen!2sgh!4v1729780739616!5m2!1sen!2sgh"
-                width="600"
-                height="450"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        
-            <div class="subscribe">
-                <input type="text" name="" id="">
-                <button class="btn">subscribe</button>
-            </div>
+    <div class="section">
+    <section class="wrap reveal">
+      <div class="cta">
+        <div>
+          <span class="eyebrow" style="color:var(--gold)">Treat yourself</span>
+          <h2>Ready to Experience True <em>Self-Care?</em></h2>
+          <p>At HorizonSalonSpa, it’s all about taking time for yourself and indulging in the luxury you deserve. From spa treatments to expert beauty services, we are here to pamper you. Step into a world where it’s all about you. Treat yourself to the ultimate self-care experience today!</p>
         </div>
-
-        <div class="box">
-            <div class="bf-text">Quick Links</div>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./portfolio.html">portfolio</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-
-            <div class="bf-text">Follow Us</div>
-            <div class="icons">
-                <a href="#" class="fa-brands fa-facebook-f"></a>
-                <a href="#" class="fa-brands fa-google"></a>
-                <a href="https://www.instagram.com/horizonsalon_spa/" class="fa-brands fa-instagram"></a>
-            </div>
+        <div class="btn-row">
+          <a class="btn btn--light" href="contact.html#book"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Book Now</a>
+          <a class="btn btn--outline-light" href="https://wa.me/233594671366" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 0 1 12 2.2a9.8 9.8 0 0 1 9.8 9.8c0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2A11.8 11.8 0 0 0 1.7 17.8L0 24l6.3-1.7A11.8 11.8 0 0 0 23.8 12c0-3.2-1.2-6.1-3.4-8.4z"/></svg> WhatsApp</a>
         </div>
-
-        <div class="box">
-        
-            <div class="bf-text">Call Us</div>
-            <ul class="SayHi">
-                <li>Phone :+233594671366</li>
-            </ul>
-
-            <div class="bf-text">Find Us</div>    
-
-        
-        </div>
+      </div>
+    </section>
     </div>
+  </main>
 
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="brand" href="index.html" aria-label="Horizon Salon &amp; Spa home">
+            <img src="images/mark.png" alt="" width="67" height="48">
+            <span class="brand-text"><span class="brand-name">Horizon</span><span class="brand-sub">Salon &amp; Spa</span></span>
+          </a>
+          <p>Luxurious hair, beauty, and spa treatments tailored to your needs.</p>
+          <div class="socials">
+            <a href="https://www.instagram.com/horizonsalon_spa/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://wa.me/233594671366" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 0 1 12 2.2a9.8 9.8 0 0 1 9.8 9.8c0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2A11.8 11.8 0 0 0 1.7 17.8L0 24l6.3-1.7A11.8 11.8 0 0 0 23.8 12c0-3.2-1.2-6.1-3.4-8.4z"/></svg></a>
+            <a href="tel:+233594671366" aria-label="Call us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Call Us</h4>
+          <ul>
+            <li><a href="tel:+233594671366">+233 59 467 1366</a></li>
+            <li><a href="https://wa.me/233594671366" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/horizonsalon_spa/" target="_blank" rel="noopener">@horizonsalon_spa</a></li>
+            <li><a href="https://maps.google.com/?cid=16864296139278462295" target="_blank" rel="noopener">Find us on Google Maps</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> Horizon Salon &amp; Spa. All rights reserved.</span>
+        <span>Built by <a href="https://github.com/Hansbuntu" target="_blank" rel="noopener">HanDevelops</a></span>
+      </div>
+    </div>
+  </footer>
 
-    <script src="./js/script.js"></script>
+  <a class="float-wa" href="https://wa.me/233594671366" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 0 1 12 2.2a9.8 9.8 0 0 1 9.8 9.8c0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2A11.8 11.8 0 0 0 1.7 17.8L0 24l6.3-1.7A11.8 11.8 0 0 0 23.8 12c0-3.2-1.2-6.1-3.4-8.4z"/></svg></a>
 
+  <dialog class="lightbox" aria-label="Photo viewer">
+    <figure><img alt=""></figure>
+    <button class="lb-close" type="button" aria-label="Close">&times;</button>
+    <button class="lb-prev" type="button" aria-label="Previous photo">&#8249;</button>
+    <button class="lb-next" type="button" aria-label="Next photo">&#8250;</button>
+    <span class="lb-count"></span>
+  </dialog>
+
+  <script src="js/site.js"></script>
 </body>
-
 </html>
